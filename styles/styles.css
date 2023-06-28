@@ -1,3 +1,46 @@
-h1 {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --primary-colour: #5f6642;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  position: absolute;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-colour);
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+.left-side {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(/assests/image-from-rawpixel-id-2299306-jpeg\ 1.png);
+  background-position-x: center;
+  background-size: auto;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-colour);
 }
