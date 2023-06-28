@@ -83,12 +83,12 @@ form {
   display: grid;
   grid-template-columns: 50% 50%;
   row-gap: 15%;
+  padding: 2rem 0;
 }
 
 form .input {
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
   color: var(--primary-colour);
 }
 
@@ -98,6 +98,8 @@ form .input input {
   padding: 10px;
   border: none;
   border-radius: 30px;
+  border: 2px solid var(--primary-colour);
+  background: transparent;
 }
 
 form .input label {
