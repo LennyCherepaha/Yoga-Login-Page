@@ -5,6 +5,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
 header {
   position: absolute;
   padding: 1rem;
@@ -12,6 +18,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  z-index: 1;
+  /* height: 5%; */
 }
 
 header nav {
@@ -23,11 +31,15 @@ header nav {
   align-items: center;
 }
 
-a {
+header nav a {
   text-decoration: none;
   color: var(--primary-colour);
   padding: 0.5rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+header nav a:hover {
+  font-weight: 400;
 }
 
 .left-side {
@@ -37,10 +49,57 @@ a {
   background-position-x: center;
   background-size: auto;
   padding: 1rem;
+  /* float: left; */
 }
 
-h2 {
+header h2 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--primary-colour);
+}
+
+.right-side {
+  /* float: right; */
+  width: 50vw;
+  background-color: rgba(95, 102, 66, 0.35);
+  padding: 15rem 4rem;
+}
+
+.right-side .container h1 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: var(--primary-colour);
+}
+
+.right-side .container .line {
+  margin-top: 3rem;
+  border: none;
+  background-color: var(--primary-colour);
+  height: 1.7px;
+}
+
+form {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 15%;
+}
+
+form .input {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  color: var(--primary-colour);
+}
+
+form .input input {
+  width: 75%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+}
+
+form .input label {
+  font-size: 0.9rem;
 }
