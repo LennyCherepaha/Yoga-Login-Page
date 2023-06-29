@@ -125,4 +125,5 @@ form .submitBtn button {
 
 form .submitBtn button:hover {
   border: 3px solid black;
+  cursor: pointer;
 }
